@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Dw radio button</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="dw tooltip">
+  </head>
+  <style>
+    body {
+      background-color: #f3f3f3;
+    }
+    dw-radio {
+      --primary-color: yellow;
+    }
+  </style>
+  <body>
+    <h2> Radio button </h2>
+    <dw-radio label="radioButton"></dw-radio>
+    <h2> Radio button group</h2>
+    <dw-radio-group name="fruit">
+      <dw-radio label="apple" name="fruit" id="1"></dw-radio>
+      <dw-radio label="banana" name="fruit" id="2"></dw-radio>
+      <dw-radio label="orange" name="fruit" id="3"></dw-radio>
+    </dw-radio-group>
+    <h2> Radio button group with pre selevcted</h2>
+    <dw-radio-group name="fruit" value="2">
+      <dw-radio label="apple" name="fruit" id="1"></dw-radio>
+      <dw-radio label="banana" name="fruit" id="2"></dw-radio>
+      <dw-radio label="orange" name="fruit" id="3"></dw-radio>
+    </dw-radio-group>
+    <noscript>
+      Please enable JavaScript to view this website.
+    </noscript>
+    <!-- Load webcomponents-loader.js to check and load any polyfills your browser needs -->
+    <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+    <script type="module" src="../dw-radio.js"></script>
+    <script type="module" src="../dw-radio-group.js"></script>
+    <!-- Built with love using PWA Starter Kit -->
+  </body>
+</html>
