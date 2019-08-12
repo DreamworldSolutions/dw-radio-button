@@ -4,37 +4,37 @@
     <meta charset="utf-8">
     <title>Dw radio button</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="dw tooltip">
+    <meta name="description" content="dw radio">
   </head>
   <style>
     body {
       background-color: #f3f3f3;
     }
-    dw-radio {
-      --primary-color: yellow;
+    dw-radio-button {
+      --accent-color: blue;
     }
   </style>
   <body>
     <h2> Radio button </h2>
-    <dw-radio label="radioButton"></dw-radio>
+    <dw-radio-button label="radioButton">radioButton</dw-radio-button>
     <h2> Radio button group</h2>
     <dw-radio-group name="fruit">
-      <dw-radio label="apple" name="fruit" id="1"></dw-radio>
-      <dw-radio label="banana" name="fruit" id="2"></dw-radio>
-      <dw-radio label="orange" name="fruit" id="3"></dw-radio>
+      <dw-radio-button name="fruit" id="1"> apple</dw-radio-button>
+      <dw-radio-button name="fruit" id="2">banana</dw-radio-button>
+      <dw-radio-button name="fruit" id="3">orange</dw-radio-button>
     </dw-radio-group>
-    <h2> Radio button group with pre selevcted</h2>
-    <dw-radio-group name="fruit" value="2">
-      <dw-radio label="apple" name="fruit" id="1"></dw-radio>
-      <dw-radio label="banana" name="fruit" id="2"></dw-radio>
-      <dw-radio label="orange" name="fruit" id="3"></dw-radio>
+    <h2> Radio button group with pre selected</h2>
+    <dw-radio-group name="fruit1" value="2">
+      <dw-radio-button name="fruit1" id="1">apple</dw-radio-button>
+      <dw-radio-button name="fruit1" id="2">banana</dw-radio-button>
+      <dw-radio-button name="fruit1" id="3">orange</dw-radio-button>
     </dw-radio-group>
     <noscript>
       Please enable JavaScript to view this website.
     </noscript>
     <!-- Load webcomponents-loader.js to check and load any polyfills your browser needs -->
     <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
-    <script type="module" src="../dw-radio.js"></script>
+    <script type="module" src="../dw-radio-button.js"></script>
     <script type="module" src="../dw-radio-group.js"></script>
     <!-- Built with love using PWA Starter Kit -->
   </body>

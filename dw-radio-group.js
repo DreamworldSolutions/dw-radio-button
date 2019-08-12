@@ -9,9 +9,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 */
 
 import { html, css, LitElement } from 'lit-element';
-import './dw-radio.js';
 
-class DWRadioGroup extends LitElement {
+export class DWRadioGroup extends LitElement {
   static get styles() {
     return [
       css`

@@ -17,10 +17,8 @@ import { Radio } from  "@material/mwc-radio";
 import { flexLayout } from '@dw/flex-layout/flex-layout.js';
 import { alignment } from '@dw/flex-layout/flex-layout-alignment.js';
 
-// These are the dw element needed by this element.
-import '@dw/dw-form-field/dw-form-field.js';
 
-class DWRadio extends Radio {
+export class DWRadioButton extends Radio {
   static get styles() {
     return [
       super.styles,
@@ -30,7 +28,6 @@ class DWRadio extends Radio {
         :host {
           display: inline-block;
           --mdc-theme-secondary: var(--accent-color);
-          --mdc-theme-primary: var(--primary-color);
         }
         .mdc-radio {
           height: 40px;
@@ -61,9 +58,9 @@ class DWRadio extends Radio {
   render() {
     let superElementRender = super.render();
     return html `
-      <div class="layout horizontal">
+      <div class="layout horizontal center">
         ${superElementRender}
-        <span class="self-center">${this.label}</span>
+        <slot></slot>
       </div>
   `;
  }
@@ -74,4 +71,4 @@ class DWRadio extends Radio {
  }
 }
 
-window.customElements.define('dw-radio', DWRadio);
+window.customElements.define('dw-radio-button', DWRadioButton);
