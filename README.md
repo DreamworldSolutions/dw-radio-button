@@ -2,14 +2,14 @@ A radio button Webcomponent created through LitElement and mwc-radio(https://www
 
 ## Install
 ```html
-	npm install @dreamworld/dw-radio
+npm install @dreamworld/dw-radio
 ```
 
 ## Usage of dw-radio
 ```html
-	import '@dreamworld/dw-radio/dw-radio.js';
+import '@dreamworld/dw-radio/dw-radio.js';
 
-	<dw-radio label="radio"></dw-radio>
+<dw-radio label="radio"></dw-radio>
 ```
 
 ## Configs/Options of dw-radio button
@@ -17,13 +17,13 @@ It supports all the properties of mwc-radio.
 
 ## Usage of dw-radio-group button
 ```html
-    import '@dreamworld/dw-radio/dw-radio-group.js';
+import '@dreamworld/dw-radio/dw-radio-group.js';
     
-     <dw-radio-group name="fruit">
-      <dw-radio label="apple" name="fruit" id="1"></dw-radio>
-      <dw-radio label="banana" name="fruit" id="2"></dw-radio>
-      <dw-radio label="orange" name="fruit" id="3"></dw-radio>
-    </dw-radio-group>
+<dw-radio-group name="fruit">
+	<dw-radio label="apple" name="fruit" id="1"></dw-radio>
+	<dw-radio label="banana" name="fruit" id="2"></dw-radio>
+	<dw-radio label="orange" name="fruit" id="3"></dw-radio>
+</dw-radio-group>
 	
 ```
 
