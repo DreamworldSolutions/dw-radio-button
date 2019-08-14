@@ -17,7 +17,6 @@ import { Radio } from  "@material/mwc-radio";
 import { flexLayout } from '@dw/flex-layout/flex-layout.js';
 import { alignment } from '@dw/flex-layout/flex-layout-alignment.js';
 
-
 export class DWRadioButton extends Radio {
   static get styles() {
     return [
@@ -58,7 +57,7 @@ export class DWRadioButton extends Radio {
   render() {
     let superElementRender = super.render();
     return html `
-      <div class="layout horizontal center">
+      <div class="layout horizontal center" @click="${this._onClick}">
         ${superElementRender}
         <slot></slot>
       </div>
@@ -68,6 +67,13 @@ export class DWRadioButton extends Radio {
  constructor(){
   super();
   this.label = ''; 
+ }
+
+ /**
+  * call blur method to fix ripple effect after radiobutton click.
+  */
+ _onClick(){
+   this.blur();
  }
 }
 
