@@ -25,7 +25,7 @@ export class DWRadioButton extends Radio {
       alignment,
       css`
         :host {
-          display: inline-block;
+          display: block;
           --mdc-theme-secondary: var(--accent-color);
         }
         .mdc-radio {

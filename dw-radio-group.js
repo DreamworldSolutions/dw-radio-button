@@ -18,7 +18,7 @@ export class DWRadioGroup extends DwFormElement(LitElement) {
     return [
       css`
         :host {
-					display: inline-block;
+					display: block;
         }
         `,
     ];
