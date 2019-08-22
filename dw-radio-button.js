@@ -11,7 +11,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 import { css, html } from 'lit-element';
 
 // These are the mwc element needed by this element.
-import { Radio } from  "@material/mwc-radio";
+import { Radio } from  "@material/mwc-radio/mwc-radio.js";
 
 // These are the dw styles element needed by this element.
 import { flexLayout } from '@dw/flex-layout/flex-layout.js';
@@ -40,13 +40,6 @@ export class DWRadioButton extends Radio {
   static get properties() {
     return {
       /**
-       * label of radio button
-       */
-      label: {
-        type: String
-      },
-
-      /**
        * name of this element
        */
       name: {
@@ -60,20 +53,15 @@ export class DWRadioButton extends Radio {
     return html `
       <div class="layout horizontal center" @click="${this._onClick}">
         ${superElementRender}
-        <span @click="${this._selectButton}"><slot></slot></span>
+        <span @click="${this._selectRadioButton}"><slot></slot></span>
       </div>
   `;
- }
-
- constructor(){
-  super();
-  this.label = ''; 
  }
 
   /**
   * on label click select radio button
   */
- _selectButton(){
+ _selectRadioButton(){
   this.click();
  }
 
