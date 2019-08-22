@@ -26,6 +26,7 @@ export class DWRadioButton extends Radio {
       css`
         :host {
           display: block;
+          cursor: pointer;
           --mdc-theme-secondary: var(--accent-color);
         }
         .mdc-radio {
@@ -59,7 +60,7 @@ export class DWRadioButton extends Radio {
     return html `
       <div class="layout horizontal center" @click="${this._onClick}">
         ${superElementRender}
-        <slot></slot>
+        <span @click="${this._selectButton}"><slot></slot></span>
       </div>
   `;
  }
@@ -67,6 +68,13 @@ export class DWRadioButton extends Radio {
  constructor(){
   super();
   this.label = ''; 
+ }
+
+  /**
+  * on label click select radio button
+  */
+ _selectButton(){
+  this.click();
  }
 
  /**
