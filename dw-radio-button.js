@@ -17,7 +17,10 @@ import { Radio } from  "@material/mwc-radio/mwc-radio.js";
 import { flexLayout } from '@dw/flex-layout/flex-layout.js';
 import { alignment } from '@dw/flex-layout/flex-layout-alignment.js';
 
-export class DWRadioButton extends Radio {
+//These are the dw element needed by this element.
+import { DwFormElement } from '@dw/dw-form/dw-form-element';
+
+export class DWRadioButton extends DwFormElement(Radio) {
   static get styles() {
     return [
       super.styles,
@@ -26,8 +29,6 @@ export class DWRadioButton extends Radio {
       css`
         :host {
           display: block;
-          cursor: pointer;
-          --mdc-theme-secondary: var(--accent-color);
         }
         .mdc-radio {
           height: 40px;
@@ -53,7 +54,7 @@ export class DWRadioButton extends Radio {
     return html `
       <div class="layout horizontal center" @click="${this._onClick}">
         ${superElementRender}
-        <span @click="${this._selectRadioButton}"><slot></slot></span>
+        <span><slot></slot></span>
       </div>
   `;
  }
@@ -69,6 +70,7 @@ export class DWRadioButton extends Radio {
   * call blur method to fix ripple effect after radiobutton click.
   */
  _onClick(){
+   this._selectRadioButton();
    this.blur();
  }
 }
