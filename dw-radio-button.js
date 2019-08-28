@@ -16,6 +16,7 @@ import { Radio } from  "@material/mwc-radio/mwc-radio.js";
 // These are the dw styles element needed by this element.
 import { flexLayout } from '@dw/flex-layout/flex-layout.js';
 import { alignment } from '@dw/flex-layout/flex-layout-alignment.js';
+import { Typography } from '@dw/material-styles/typography.js';
 
 //These are the dw element needed by this element.
 import { DwFormElement } from '@dw/dw-form/dw-form-element';
@@ -26,6 +27,7 @@ export class DWRadioButton extends DwFormElement(Radio) {
       super.styles,
       flexLayout,
       alignment,
+      Typography,
       css`
         :host {
           display: block;
@@ -54,7 +56,7 @@ export class DWRadioButton extends DwFormElement(Radio) {
     return html `
       <div class="layout horizontal center" @click="${this._onClick}">
         ${superElementRender}
-        <span><slot></slot></span>
+        <span class="body2"><slot></slot></span>
       </div>
   `;
  }

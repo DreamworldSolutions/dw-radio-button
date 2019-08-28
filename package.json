@@ -1,6 +1,6 @@
 {
   "name": "@dw/dw-radio-button",
-  "version": "1.0.5-SNAPSHOT",
+  "version": "1.0.6-SNAPSHOT",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -16,6 +16,7 @@
     "@dw/dw-form": "^1.0.0-SNAPSHOT",
     "@dw/dw-form-field": "^1.0.0-SNAPSHOT",
     "@dw/flex-layout": "^1.0.5",
+    "@dw/material-styles": "^1.0.2-SNAPSHOT",
     "@material/mwc-radio": "^0.6.0",
     "lit-element": "^2.2.0"
   },
