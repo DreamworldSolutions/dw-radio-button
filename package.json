@@ -14,7 +14,6 @@
   "license": "ISC",
   "dependencies": {
     "@dw/dw-form": "^1.0.0-SNAPSHOT",
-    "@dw/dw-form-field": "^1.0.0-SNAPSHOT",
     "@dw/flex-layout": "^1.0.5",
     "@dw/material-styles": "^1.0.2-SNAPSHOT",
     "@material/mwc-radio": "^0.6.0",
