@@ -1,6 +1,6 @@
 {
-  "name": "@dw/dw-radio-button",
-  "version": "1.0.6-SNAPSHOT",
+  "name": "@dreamworld/dw-radio-button",
+  "version": "0.0.0-development",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -20,10 +20,14 @@
     "lit-element": "^2.2.0"
   },
   "devDependencies": {
-    "@webcomponents/webcomponentsjs": "^2.2.10"
+    "@webcomponents/webcomponentsjs": "^2.2.10",
+     "semantic-release": "beta"
   },
   "bugs": {
     "url": "https://github.com/DreamworldSolutions/dw-radio-button/issues"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "homepage": "https://github.com/DreamworldSolutions/dw-radio-button#readme"
 }
