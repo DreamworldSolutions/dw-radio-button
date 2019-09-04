@@ -13,15 +13,15 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@dreamworld/flex-layout": "^1.0.0",
     "@dw/dw-form": "^1.0.0-SNAPSHOT",
-    "@dw/flex-layout": "^1.0.5",
     "@dw/material-styles": "^1.0.2-SNAPSHOT",
     "@material/mwc-radio": "^0.6.0",
     "lit-element": "^2.2.0"
   },
   "devDependencies": {
     "@webcomponents/webcomponentsjs": "^2.2.10",
-     "semantic-release": "beta"
+    "semantic-release": "beta"
   },
   "bugs": {
     "url": "https://github.com/DreamworldSolutions/dw-radio-button/issues"

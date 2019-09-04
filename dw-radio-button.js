@@ -14,8 +14,8 @@ import { css, html } from 'lit-element';
 import { Radio } from  "@material/mwc-radio/mwc-radio.js";
 
 // These are the dw styles element needed by this element.
-import { flexLayout } from '@dw/flex-layout/flex-layout.js';
-import { alignment } from '@dw/flex-layout/flex-layout-alignment.js';
+import { flexLayout } from '@dreamworld/flex-layout/flex-layout.js';
+import { alignment } from '@dreamworld/flex-layout/flex-layout-alignment.js';
 import { Typography } from '@dw/material-styles/typography.js';
 
 //These are the dw element needed by this element.
