@@ -37,6 +37,11 @@ export class DWRadioButton extends DwFormElement(Radio) {
           height: 40px;
           margin-right: 4px;
         }
+
+        .main:hover .mdc-radio::before {
+          background-color: var(--mdc-theme-secondary, #018786);
+          opacity: 0.04;
+        }
       `
     ];
   }
@@ -55,7 +60,7 @@ export class DWRadioButton extends DwFormElement(Radio) {
   render() {
     let superElementRender = super.render();
     return html `
-      <div class="layout horizontal center" @click="${this._onClick}">
+      <div class="layout horizontal center main" @click="${this._onClick}">
         ${superElementRender}
         <span class="body2"><slot></slot></span>
       </div>
