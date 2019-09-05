@@ -31,6 +31,7 @@ export class DWRadioButton extends DwFormElement(Radio) {
       css`
         :host {
           display: block;
+          cursor: default;
         }
         .mdc-radio {
           height: 40px;
