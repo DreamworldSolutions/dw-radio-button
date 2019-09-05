@@ -14,8 +14,8 @@
   "license": "ISC",
   "dependencies": {
     "@dreamworld/flex-layout": "^1.0.0",
-    "@dw/dw-form": "^1.0.0-SNAPSHOT",
-    "@dw/material-styles": "^1.0.2-SNAPSHOT",
+    "@dreamworld/dw-form": "^1.0.0",
+    "@dreamworld/material-styles": "^1.0.1",
     "@material/mwc-radio": "^0.6.0",
     "lit-element": "^2.2.0"
   },

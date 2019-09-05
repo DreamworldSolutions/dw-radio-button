@@ -16,10 +16,10 @@ import { Radio } from  "@material/mwc-radio/mwc-radio.js";
 // These are the dw styles element needed by this element.
 import { flexLayout } from '@dreamworld/flex-layout/flex-layout.js';
 import { alignment } from '@dreamworld/flex-layout/flex-layout-alignment.js';
-import { Typography } from '@dw/material-styles/typography.js';
+import { Typography } from '@dreamworld/material-styles/typography.js';
 
 //These are the dw element needed by this element.
-import { DwFormElement } from '@dw/dw-form/dw-form-element';
+import { DwFormElement } from '@dreamworld/dw-form/dw-form-element';
 
 export class DWRadioButton extends DwFormElement(Radio) {
   static get styles() {

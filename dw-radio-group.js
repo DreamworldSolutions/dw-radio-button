@@ -11,7 +11,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 import { html, css, LitElement } from 'lit-element';
 
 // These are the dw element needed by this element.
-import { DwFormElement } from '@dw/dw-form/dw-form-element';
+import { DwFormElement } from '@dreamworld/dw-form/dw-form-element';
 
 export class DWRadioGroup extends DwFormElement(LitElement) {
   static get styles() {
