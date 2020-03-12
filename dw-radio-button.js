@@ -33,6 +33,11 @@ export class DWRadioButton extends DwFormElement(Radio) {
           display: block;
           cursor: default;
         }
+        
+        :host([disabled]) {
+          pointer-events: none;
+        }
+
         .mdc-radio {
           height: 40px;
           margin-right: 4px;
