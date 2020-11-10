@@ -41,6 +41,10 @@ export class DWRadioButton extends DwFormElement(Radio) {
         .mdc-radio {
           height: 40px;
           margin-right: 4px;
+          width: 40px;
+          -moz-box-sizing: border-box;
+          -webkit-box-sizing: border-box;
+          box-sizing: border-box;
         }
 
         .main:hover .mdc-radio::before {
