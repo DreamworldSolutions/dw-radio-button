@@ -17,23 +17,18 @@
     "@dreamworld/flex-layout": "^1.0.0",
     "@dreamworld/material-styles": "^1.0.1",
     "@dreamworld/pwa-helpers": "^1.7.1",
+    "@material/mwc-base": "^0.19.1",
     "@material/mwc-radio": "^0.19.1",
-    "lit-element": "^2.2.0"
+    "@material/mwc-ripple": "^0.19.1",
+    "@material/radio": "=9.0.0-canary.b39094d14.0",
+    "lit-element": "^2.3.0",
+    "tslib": "^1.10.0"
   },
   "devDependencies": {
+    "@material/ripple": "=9.0.0-canary.b39094d14.0",
     "@webcomponents/webcomponentsjs": "^2.2.10",
+    "lit-html": "^1.1.2",
     "semantic-release": "17.0.8"
-  },
-  "resolutions": {
-    "lit-element": "2.3.1",
-    "lit-html": "1.2.1",
-    "@material/mwc-base": "0.19.1",
-    "@material/base": "8.0.0-canary.774dcfc8e.0",
-    "@material/feature-targeting": "8.0.0-canary.774dcfc8e.0",
-    "@material/ripple": "8.0.0-canary.774dcfc8e.0",
-    "@material/theme": "8.0.0-canary.774dcfc8e.0",
-    "@material/animation": "8.0.0-canary.774dcfc8e.0",
-    "@material/dom": "8.0.0-canary.774dcfc8e.0"
   },
   "bugs": {
     "url": "https://github.com/DreamworldSolutions/dw-radio-button/issues"
@@ -52,5 +47,17 @@
         "channel": "${name.replace(/^feature\\//g,\"\")}"
       }
     ]
+  },
+  "resolutions": {
+    "@material/mwc-base": "0.19.1",
+    "@material/base": "9.0.0-canary.b39094d14.0",
+    "@material/feature-targeting": "9.0.0-canary.b39094d14.0",
+    "@material/ripple": "9.0.0-canary.b39094d14.0",
+    "@material/theme": "9.0.0-canary.b39094d14.0",
+    "@material/animation": "9.0.0-canary.b39094d14.0",
+    "@material/dom": "9.0.0-canary.b39094d14.0",
+    "@material/radio": "9.0.0-canary.b39094d14.0",
+    "@material/density": "9.0.0-canary.b39094d14.0",
+    "@material/touch-target": "9.0.0-canary.b39094d14.0"
   }
 }
