@@ -30,11 +30,14 @@
     "@material/mwc-base": "0.20.0",
     "@material/base": "9.0.0-canary.1c156d69d.0",
     "@material/feature-targeting": "9.0.0-canary.1c156d69d.0",
-    "@material/ripple": "9.0.0-canary.1c156d69d.0",
+    "@material/ripple": "9.0.0-canary.9244508bd.0",
+    "@material/radio": "9.0.0-canary.9244508bd.0",
     "@material/theme": "9.0.0-canary.1c156d69d.0",
     "tslib": "2.0.3",
     "@material/animation": "9.0.0-canary.1c156d69d.0",
-    "@material/dom": "9.0.0-canary.1c156d69d.0"
+    "@material/dom": "9.0.0-canary.1c156d69d.0",
+    "@material/density": "9.0.0-canary.9244508bd.0",
+    "@material/touch-target": "9.0.0-canary.9244508bd.0"
   },
   "bugs": {
     "url": "https://github.com/DreamworldSolutions/dw-radio-button/issues"
