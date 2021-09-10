@@ -53,7 +53,7 @@ export class DWRadioGroup extends DwFormElement(LitElement) {
 		super.connectedCallback();
 
 		this.addEventListener('change', (e) => {
-      this.value = e.target.id;
+      this.value = e.target.value;
 		});
   }
   
@@ -66,7 +66,7 @@ export class DWRadioGroup extends DwFormElement(LitElement) {
       }
   
       slotElement.forEach((element) => {
-        if(element.id == this.value){
+        if(element.value == this.value){
           element.checked = true;
         }
         else {
