@@ -2,55 +2,35 @@ A radio button Webcomponent created through LitElement and mwc-radio(https://www
 
 ## Install
 ```html
-npm install @dreamworld/dw-radio
+npm install @dreamworld/dw-radio-button
 ```
 
-## Usage of dw-radio
+## Usage guide
+### Import
 ```html
-import '@dreamworld/dw-radio/dw-radio.js';
-
-<dw-radio label="radio"></dw-radio>
+import '@dreamworld/dw-radio-button/dw-radio-group.js';
+import '@dreamworld/dw-radio-button/dw-radio-button.js';
 ```
 
-## Configs/Options of dw-radio button
-It supports all the properties of mwc-radio.
-
-## Usage of dw-radio-group button
-```html
-import '@dreamworld/dw-radio/dw-radio-group.js';
-    
+### Use
+```
 <dw-radio-group name="fruit">
-	<dw-radio label="apple" name="fruit" id="1"></dw-radio>
-	<dw-radio label="banana" name="fruit" id="2"></dw-radio>
-	<dw-radio label="orange" name="fruit" id="3"></dw-radio>
+	<dw-radio-button label="apple" name="fruit" value="1"></dw-radio-button>
+	<dw-radio-button label="banana" name="fruit" value="2"></dw-radio-button>
+	<dw-radio-button label="orange" name="fruit" value="3"></dw-radio-button>
 </dw-radio-group>
-	
+
 ```
+
+## CSS variables
+- `--dw-radio-padding`: Padding around radio. Default is `10px`.
+- `--dw-radio-margin`: Margin around radio. Default is `0px`.
+- `--dw-radio-top-align-margin`: Margin around radio when it is top aligned. Default is `-10px 0 0 0`.
+- `--dw-radio-width`: Width of radio button. Default is `40px`.
+- `--dw-radio-height`: Height of radio button. Default is `40px`.
+- `--dw-radio-inset`: Inset value of radio. Default is `0px`.
+
+## Properties
+- It supports all the properties of [mwc-radio](https://github.com/material-components/material-web/tree/master/packages/radio) & [mwc-formfield](https://github.com/material-components/material-web/tree/master/packages/formfield).
 
 ## [Demo](https://dreamworldsolutions.github.io/dw-radio-button/demo/index.html)
-
-## Configs/Options of dw-radio-group
-It support property
-- value
-
-
-### Theme
-To Override DWRadio class to create a custom radio
-
-```
-class CustomRadio extends DWRadio {
-
-static get styles() {
-	return [
-		DWRadio.styles,
-		css`
-		.mdc-radio {
-		  border-radius: 5px;
-		}`
-	];
- }
-}
-customElements.define('custom-radio', CustomRadio);
-
-<custom-radio></custom-radio>
-```
