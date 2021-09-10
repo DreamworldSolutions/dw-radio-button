@@ -23,10 +23,10 @@
     chalk "^2.0.0"
     js-tokens "^4.0.0"
 
-"@dreamworld/dw-form@^2.1.0":
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/@dreamworld/dw-form/-/dw-form-2.1.0.tgz#e980f82a9a6cb240d4442373c04526ca1658db1c"
-  integrity sha512-AaikcQ5tQjXQvaf3V7YJrrqmEMTND+Zz0vtkSYdfa5qx/NxM8OD09ZZYitTNs075nPPd73gA6eG2FiNoetghnA==
+"@dreamworld/dw-form@2.3.0-development.1":
+  version "2.3.0-development.1"
+  resolved "https://registry.yarnpkg.com/@dreamworld/dw-form/-/dw-form-2.3.0-development.1.tgz#7c812a4ad783e723e1c35c34eeed47087aeacba5"
+  integrity sha512-+kA6gmFFFYiBJMxEnJlINPRLzLBC+3nomFFL/Os56E0aJ8vO2BtYEhl/8PrcUemzKjJikeCOOPwd5gnwUSIPtg==
   dependencies:
     "@dreamworld/pwa-helpers" "^1.7.1"
     "@material/mwc-formfield" "^0.20.0"
