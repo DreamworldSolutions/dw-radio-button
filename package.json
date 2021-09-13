@@ -13,7 +13,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@dreamworld/dw-form": "2.3.0-development.1",
+    "@dreamworld/dw-form": "^2.3.0-development.1",
     "@dreamworld/flex-layout": "^1.0.0",
     "@dreamworld/material-styles": "^1.0.1",
     "@dreamworld/pwa-helpers": "^1.7.1",
