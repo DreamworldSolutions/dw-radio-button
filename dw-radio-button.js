@@ -122,26 +122,31 @@ export class DWRadioButton extends DwFormElement(LitElement) {
     this.alignEnd = false;
     this.nowrap = false;
     this.spaceBetween = false;
+    this.addEventListener('click', this._onClick);
   }
 
   render() {
     return html`
       <dw-form-field class="form-field" label="${this.label}" ?alignEnd="${this.alignEnd}" .nowrap="${this.nowrap}" .spaceBetween="${this.spaceBetween}" .alignTop="${this.alignTop}">
         <dw-radio class="radio" ?align-top="${this.alignTop}" ?checked="${this.checked}" ?disabled="${this.disabled}" name="${this.name}" value="${this.value}"
-          ?global="${this.global}" ?reducedTouchTarget="${this.reducedTouchTarget}" @change="${this._onChange}">
+          ?global="${this.global}" ?reducedTouchTarget="${this.reducedTouchTarget}">
         </dw-radio>
       </dw-form-field>
   `;
   }
 
+  get _radioEl() {
+    return this.renderRoot.querySelector('.radio');
+  }
+
   /**
    * Triggers `change` event
-   * Sets value of `checked` property & blur it to remove ripple effect.
+   * Sets `checked` to `true` & blur it to remove ripple effect.
    */
-  _onChange(e) {
-    const target = e.target;
+  _onClick(e) {
+    const target = this._radioEl;
     if (target) {
-      this.checked = target.checked;
+      this.checked = true;
       this.dispatchEvent(new Event('change', e));
       const input = target.renderRoot.querySelector('input');
       input && input.blur();
