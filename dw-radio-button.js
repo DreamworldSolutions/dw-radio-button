@@ -26,6 +26,9 @@ export class DWRadioButton extends DwFormElement(LitElement) {
         :host {
           display: block;
           cursor: pointer;
+
+          --mdc-radio-unchecked-color: var(--mdc-theme-text-secondary-on-background);
+          --mdc-theme-text-primary: var(--mdc-theme-text-primary-on-surface);
         }
 
         .form-field {
@@ -130,6 +133,10 @@ export class DWRadioButton extends DwFormElement(LitElement) {
         <dw-radio class="radio" ?align-top="${this.alignTop}" ?checked="${this.checked}" ?disabled="${this.disabled}" name="${this.name}" value="${this.value}"
           ?global="${this.global}" ?reducedTouchTarget="${this.reducedTouchTarget}" @change="${this._onChange}">
         </dw-radio>
+
+        <div slot="label">
+          <slot name="label"></slot>
+        </div>
       </dw-form-field>
   `;
   }

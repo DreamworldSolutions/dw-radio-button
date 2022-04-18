@@ -13,11 +13,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@dreamworld/dw-form": "^2.3.0",
+    "@dreamworld/dw-form": "^3.0.1-development.3",
     "@dreamworld/flex-layout": "^1.0.0",
-    "@dreamworld/material-styles": "^1.0.1",
     "@dreamworld/pwa-helpers": "^1.7.1",
-    "@material/mwc-radio": "0.20.0",
+    "@material/mwc-radio": "^0.25.3",
     "lit-element": "^2.2.0"
   },
   "devDependencies": {
