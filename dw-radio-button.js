@@ -29,6 +29,7 @@ export class DWRadioButton extends DwFormElement(LitElement) {
 
           --mdc-radio-unchecked-color: var(--mdc-theme-text-secondary-on-background);
           --mdc-theme-text-primary: var(--mdc-theme-text-primary-on-surface);
+          --mdc-radio-disabled-color: var(--mdc-theme-text-disabled-on-background);
         }
 
         .form-field {
