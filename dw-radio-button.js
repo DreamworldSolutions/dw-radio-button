@@ -130,7 +130,7 @@ export class DWRadioButton extends DwFormElement(LitElement) {
 
   render() {
     return html`
-      <dw-form-field class="form-field" label="${this.label}" ?alignEnd="${this.alignEnd}" .nowrap="${this.nowrap}" .spaceBetween="${this.spaceBetween}" .alignTop="${this.alignTop}">
+      <dw-form-field class="form-field" label="${this.label}" ?alignEnd="${this.alignEnd}" .nowrap="${this.nowrap}" .spaceBetween="${this.spaceBetween}" .alignTop="${this.alignTop}" ?disabled="${this.disabled}">
         <dw-radio class="radio" ?align-top="${this.alignTop}" ?checked="${this.checked}" ?disabled="${this.disabled}" name="${this.name}" value="${this.value}"
           ?global="${this.global}" ?reducedTouchTarget="${this.reducedTouchTarget}" @change="${this._onChange}">
         </dw-radio>
