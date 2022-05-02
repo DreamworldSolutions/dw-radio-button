@@ -1,3 +1,4 @@
+import '@material/mwc-ripple/mwc-ripple';
 import { Radio } from '@material/mwc-radio';
 import { css } from 'lit-element';
 
