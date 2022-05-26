@@ -16,7 +16,7 @@
     "@dreamworld/dw-form": "^3.0.1",
     "@dreamworld/flex-layout": "^1.0.0",
     "@dreamworld/pwa-helpers": "^1.7.1",
-    "@material/mwc-radio": "^0.20.0",
+    "@material/mwc-radio": "^0.26.1",
     "lit-element": "^2.2.0"
   },
   "devDependencies": {
