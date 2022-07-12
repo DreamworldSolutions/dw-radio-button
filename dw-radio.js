@@ -38,6 +38,10 @@ export class DwRadio extends Radio {
           background-color: var(--mdc-theme-secondary, #018786);
           opacity: 0.04;
         }
+
+        .mdc-radio__inner-circle {
+          will-change: transform;
+        }
     `];
   }
 }
