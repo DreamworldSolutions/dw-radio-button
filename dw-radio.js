@@ -1,6 +1,6 @@
 import '@material/mwc-ripple/mwc-ripple';
 import { Radio } from '@material/mwc-radio';
-import { css } from 'lit-element';
+import { LitElement, html, css } from '@dreamworld/pwa-helpers/lit.js';
 
 /**
  * Extended version of [mwc-radio]
