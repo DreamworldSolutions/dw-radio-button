@@ -23,30 +23,21 @@
     chalk "^2.0.0"
     js-tokens "^4.0.0"
 
-"@dreamworld/dw-form@^3.0.1":
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/@dreamworld/dw-form/-/dw-form-3.0.1.tgz#5a7f2e0305f3b85ec1a9031ad97219a361204c7a"
-  integrity sha512-OQ6MqtuP4i4oEFdGPRQm74vJ3vpXt7OyNRapepE4vsTPsdoDXwZjUEzJPXX4LOoGl/ERI5bsHFEX4VPMeUEK9w==
+"@dreamworld/dw-form@https://github.com/DreamworldSolutions/dw-form.git#feature/upgrade-to-lit":
+  version "0.0.0-development"
+  resolved "https://github.com/DreamworldSolutions/dw-form.git#520a18483c1c622c326a61a36abf7e7b82948458"
   dependencies:
-    "@dreamworld/material-styles" "^2.0.0"
-    "@dreamworld/pwa-helpers" "^1.7.1"
-    lit-element "^2.0.1"
+    "@dreamworld/material-styles" "https://github.com/DreamworldSolutions/material-styles.git#feature/upgrade-to-lit"
+    "@dreamworld/pwa-helpers" "^1.13.1"
     lodash-es "^4.17.15"
 
-"@dreamworld/dw-ripple@https://github.com/DreamworldSolutions/dw-ripple.git#feature/upgrade-to-lit":
+"@dreamworld/material-styles@https://github.com/DreamworldSolutions/material-styles.git#feature/upgrade-to-lit":
   version "0.0.0-development"
-  resolved "https://github.com/DreamworldSolutions/dw-ripple.git#71d35b967438ae3b663f6164c9497a5f1bc0e5ac"
+  resolved "https://github.com/DreamworldSolutions/material-styles.git#29c73b0e6e36e882ff081533be7d5d49b48a52f8"
   dependencies:
-    "@material/mwc-ripple" "^0.26.1"
+    "@dreamworld/pwa-helpers" "^1.13.1"
 
-"@dreamworld/material-styles@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@dreamworld/material-styles/-/material-styles-2.0.0.tgz#1d856b93670407c447f98ec92e674e99aacfe7c8"
-  integrity sha512-Deea75b60diKDcYsqiZ6OKjQtkGbClZtYeLp6M7SFQG2UzZuaXrTCcpDNn3/BC4PE2cv9aazzBB+BNLfCdhINg==
-  dependencies:
-    lit-element "^2.2.0"
-
-"@dreamworld/pwa-helpers@^1.13.1", "@dreamworld/pwa-helpers@^1.7.1":
+"@dreamworld/pwa-helpers@^1.13.1":
   version "1.13.1"
   resolved "https://registry.yarnpkg.com/@dreamworld/pwa-helpers/-/pwa-helpers-1.13.1.tgz#825e6faf1c530591a48b6568996cdbebf8fcacc8"
   integrity sha512-/NHwoVm7cv6w1obkFYNW2ebPc//r4bzp7CjfGKHgzLaKnqt4RwY/n8nCaqzPyaJ4RJH/HnC5zYijN5g3+PhDqw==
@@ -116,16 +107,6 @@
     "@material/feature-targeting" "14.0.0-canary.53b3cad2f.0"
     "@material/rtl" "14.0.0-canary.53b3cad2f.0"
 
-"@material/mwc-base@^0.26.1":
-  version "0.26.1"
-  resolved "https://registry.yarnpkg.com/@material/mwc-base/-/mwc-base-0.26.1.tgz#82244634912bbe93129e956f2d907468ebe69fd8"
-  integrity sha512-YcVvWwSoDwQAxjvYevhZgtyXIIPuMeTnw9MtEj+Hv7NJizT88hoTsPmKpwM+X58cIY2SPo0y/tHfgmblWntibQ==
-  dependencies:
-    "@material/base" "=14.0.0-canary.53b3cad2f.0"
-    "@material/dom" "=14.0.0-canary.53b3cad2f.0"
-    lit "^2.0.0"
-    tslib "^2.0.1"
-
 "@material/mwc-base@^0.27.0":
   version "0.27.0"
   resolved "https://registry.yarnpkg.com/@material/mwc-base/-/mwc-base-0.27.0.tgz#9bb282510b39168dcaa2d2c23aecdf91f6733c6e"
@@ -144,17 +125,6 @@
     "@material/mwc-base" "^0.27.0"
     "@material/mwc-ripple" "^0.27.0"
     "@material/radio" "=14.0.0-canary.53b3cad2f.0"
-    lit "^2.0.0"
-    tslib "^2.0.1"
-
-"@material/mwc-ripple@^0.26.1":
-  version "0.26.1"
-  resolved "https://registry.yarnpkg.com/@material/mwc-ripple/-/mwc-ripple-0.26.1.tgz#0825137329c78df02cee4f8da2e28d6daeceb305"
-  integrity sha512-hBeC2S7TSYLmHetXbtu52/EZFzvAqrQk5skIV0aUZeZvywTJWRVoc5OavDjsJYuKxDnSECMnkIt8+l8WC48chg==
-  dependencies:
-    "@material/dom" "=14.0.0-canary.53b3cad2f.0"
-    "@material/mwc-base" "^0.26.1"
-    "@material/ripple" "=14.0.0-canary.53b3cad2f.0"
     lit "^2.0.0"
     tslib "^2.0.1"
 
@@ -3117,13 +3087,6 @@ lines-and-columns@^1.1.6:
   resolved "https://registry.yarnpkg.com/lines-and-columns/-/lines-and-columns-1.1.6.tgz#1c00c743b433cd0a4e80758f7b64a57440d9ff00"
   integrity sha1-HADHQ7QzzQpOgHWPe2SldEDZ/wA=
 
-lit-element@^2.0.1, lit-element@^2.2.0:
-  version "2.3.1"
-  resolved "https://registry.yarnpkg.com/lit-element/-/lit-element-2.3.1.tgz#73343b978fa1e73d60526c6bb6ad60f53a16c343"
-  integrity sha512-tOcUAmeO3BzwiQ7FGWdsshNvC0HVHcTFYw/TLIImmKwXYoV0E7zCBASa8IJ7DiP4cen/Yoj454gS0qqTnIGsFA==
-  dependencies:
-    lit-html "^1.1.1"
-
 lit-element@^3.2.0, lit-element@^3.2.2:
   version "3.2.2"
   resolved "https://registry.yarnpkg.com/lit-element/-/lit-element-3.2.2.tgz#d148ab6bf4c53a33f707a5168e087725499e5f2b"
@@ -3131,11 +3094,6 @@ lit-element@^3.2.0, lit-element@^3.2.2:
   dependencies:
     "@lit/reactive-element" "^1.3.0"
     lit-html "^2.2.0"
-
-lit-html@^1.1.1:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/lit-html/-/lit-html-1.2.1.tgz#1fb933dc1e2ddc095f60b8086277d4fcd9d62cc8"
-  integrity sha512-GSJHHXMGLZDzTRq59IUfL9FCdAlGfqNp/dEa7k7aBaaWD+JKaCjsAk9KYm2V12ItonVaYx2dprN66Zdm1AuBTQ==
 
 lit-html@^2.2.0, lit-html@^2.4.0:
   version "2.4.0"
