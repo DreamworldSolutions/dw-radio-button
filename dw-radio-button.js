@@ -156,4 +156,4 @@ export class DWRadioButton extends DwFormElement(LitElement) {
   }
 }
 
-window.customElements.define('dw-radio-button', DWRadioButton);
+customElements.define('dw-radio-button', DWRadioButton);
