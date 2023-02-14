@@ -65,4 +65,4 @@ export class DWRadioGroup extends DwFormElement(LitElement) {
   }
 }
 
-window.customElements.define('dw-radio-group', DWRadioGroup);
+customElements.define('dw-radio-group', DWRadioGroup);
