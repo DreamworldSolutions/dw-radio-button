@@ -15,7 +15,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@dreamworld/dw-form": "^4.0.0",
+    "@dreamworld/dw-form": "^4.1.2",
     "@dreamworld/pwa-helpers": "^1.13.1",
     "@material/mwc-radio": "0.27.0"
   },
