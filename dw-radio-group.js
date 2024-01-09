@@ -1,16 +1,16 @@
-import { LitElement, html, css } from '@dreamworld/pwa-helpers/lit.js';
+import { LitElement, css, html } from "@dreamworld/pwa-helpers/lit.js";
 
 // These are the dw element needed by this element.
-import { DwFormElement } from '@dreamworld/dw-form/dw-form-element';
+import { DwFormElement } from "@dreamworld/dw-form/dw-form-element";
 
 export class DWRadioGroup extends DwFormElement(LitElement) {
   static get styles() {
     return [
       css`
         :host {
-					display: block;
+          display: block;
         }
-        `,
+      `,
     ];
   }
 
@@ -20,44 +20,44 @@ export class DWRadioGroup extends DwFormElement(LitElement) {
        * label of this element
        */
       value: {
-        type: String
-			},
+        type: String,
+      },
 
-			 /**
+      /**
        * name of this element
        */
       name: {
-        type: String
-      }
-    }
+        type: String,
+      },
+    };
   }
 
-  render(){
-    return html`
-			<slot></slot>
-    `
-	}
+  render() {
+    return html` <slot></slot> `;
+  }
 
-	connectedCallback(){
-		super.connectedCallback();
-		this.addEventListener('change', (e) => {
+  connectedCallback() {
+    super.connectedCallback();
+    this.addEventListener("change", (e) => {
       this.value = e.target.value;
-		});
+    });
   }
-  
-  updated(changeProps){
-    if(changeProps.has('value')){
-      const slotElement = this.querySelectorAll('*');
 
-      if(!this.value){
+  updated(changeProps) {
+    if (changeProps.has("value")) {
+      const slotElement = this.querySelectorAll("*");
+
+      if (!this.value) {
+        slotElement.forEach((element) => {
+          element.checked = false;
+        });
         return;
       }
-  
+
       slotElement.forEach((element) => {
-        if(element.value == this.value){
+        if (element.value == this.value) {
           element.checked = true;
-        }
-        else {
+        } else {
           element.checked = false;
         }
       });
@@ -65,4 +65,4 @@ export class DWRadioGroup extends DwFormElement(LitElement) {
   }
 }
 
-customElements.define('dw-radio-group', DWRadioGroup);
+customElements.define("dw-radio-group", DWRadioGroup);
