@@ -1,6 +1,6 @@
-import '@material/mwc-ripple/mwc-ripple';
-import { Radio } from '@material/mwc-radio';
-import { LitElement, html, css } from '@dreamworld/pwa-helpers/lit.js';
+import { css } from "@dreamworld/pwa-helpers/lit.js";
+import { Radio } from "@material/mwc-radio";
+import "@material/mwc-ripple/mwc-ripple";
 
 /**
  * Extended version of [mwc-radio]
@@ -12,9 +12,9 @@ export class DwRadio extends Radio {
       css`
         :host {
           display: block;
-          cursor: pointer
+          cursor: pointer;
         }
-        
+
         :host([disabled]) {
           pointer-events: none;
         }
@@ -42,9 +42,9 @@ export class DwRadio extends Radio {
         .mdc-radio__inner-circle {
           will-change: transform;
         }
-    `];
+      `,
+    ];
   }
 }
 
-customElements.define('dw-radio', DwRadio);
-
+customElements.define("dw-radio", DwRadio);
