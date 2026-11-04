@@ -13,19 +13,16 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@dreamworld/dw-form": "^3.0.1",
-    "@dreamworld/flex-layout": "^1.0.0",
-    "@dreamworld/pwa-helpers": "^1.7.1",
-    "@material/mwc-radio": "^0.20.0",
-    "lit-element": "^2.2.0"
+    "@dreamworld/dw-form": "2.3.2-kerika.1",
+    "@dreamworld/pwa-helpers": "^3.0.2",
+    "@material/mwc-radio": "0.27.0",
+    "lit": "^3.3.0"
   },
   "devDependencies": {
     "@webcomponents/webcomponentsjs": "^2.2.10",
     "semantic-release": "17.0.8"
   },
   "resolutions": {
-    "lit-element": "2.3.1",
-    "lit-html": "1.2.1",
     "tslib": "2.1.0"
   },
   "bugs": {

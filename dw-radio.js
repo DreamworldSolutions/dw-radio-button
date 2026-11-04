@@ -1,6 +1,6 @@
 import '@material/mwc-ripple/mwc-ripple';
 import { Radio } from '@material/mwc-radio';
-import { css } from 'lit-element';
+import { css } from 'lit';
 
 /**
  * Extended version of [mwc-radio]
@@ -37,6 +37,10 @@ export class DwRadio extends Radio {
         .main:hover .mdc-radio::before {
           background-color: var(--mdc-theme-secondary, #018786);
           opacity: 0.04;
+        }
+
+        .mdc-radio__inner-circle {
+          will-change: transform;
         }
     `];
   }

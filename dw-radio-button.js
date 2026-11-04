@@ -1,4 +1,4 @@
-import { css, html } from 'lit-element';
+import { css, html } from 'lit';
 import { LitElement } from '@dreamworld/pwa-helpers/lit-element.js';
 import './dw-radio';
 import '@dreamworld/dw-form/dw-form-field';
